@@ -1,4 +1,3 @@
 flask
 Gunicorn
-os
 pywhatkit

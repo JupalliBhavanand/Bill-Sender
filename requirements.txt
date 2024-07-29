@@ -5,5 +5,4 @@ pandas
 pyautogui
 razorpay
 datetime
-time
 uuid

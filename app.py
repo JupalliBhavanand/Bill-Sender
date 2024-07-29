@@ -50,8 +50,6 @@ def process_file(file_path):
             phone_number = '+91' + phone_number  # Assuming country code is +91
         message = f"Dear {row['name']}, your bill is {row['bill_amount']}."
         message += f"\n⏰⏰ please pay before 10th\n"
-        message += f"please inform any mistakes in bill\n\n"
-        message += f"🌝🌝Sir/Madam, please inform morning hours only for next day no milk on whatsapp.\n\n"
         message += f"\nThanking you from BHOOMA PRABHAKAR "
         try:
             kit.sendwhatmsg_instantly(phone_number, message)
@@ -64,7 +62,4 @@ def process_file(file_path):
     df.to_excel(file_path, index=False)
     print("Excel sheet updated.")
 
-if __name__ == "__main__":
-    if not os.path.exists(UPLOAD_FOLDER):
-        os.makedirs(UPLOAD_FOLDER)
-    app.run(debug=False,host='0.0.0.0')
+

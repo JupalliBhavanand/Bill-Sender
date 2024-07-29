@@ -1,3 +1,9 @@
 flask
 Gunicorn
 pywhatkit
+pandas
+pyautogui
+razorpay
+datetime
+time
+uuid
